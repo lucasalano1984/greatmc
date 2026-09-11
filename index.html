@@ -3,61 +3,85 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>GreatsMC - Prime VIP</title>
+<title>GreatsMC • Prime VIP</title>
 
-https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap
+https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap
 
 <style>
+
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:'Poppins',sans-serif;
+    font-family:"Poppins",sans-serif;
 }
 
 body{
-    background:#0d1117;
+    background:#0a0f0c;
     color:white;
 }
 
 header{
-    padding:20px 8%;
     display:flex;
     justify-content:space-between;
     align-items:center;
-    border-bottom:1px solid #1f2937;
+    padding:20px 8%;
+    background:#0f1511;
+    border-bottom:2px solid #22c55e;
 }
 
 .logo{
-    font-size:2rem;
-    font-weight:700;
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.logo img{
+    width:70px;
+}
+
+.logo h1{
     color:#22c55e;
+    font-size:2rem;
 }
 
 .hero{
-    min-height:80vh;
+    min-height:85vh;
     display:flex;
-    flex-direction:column;
     justify-content:center;
     align-items:center;
+    flex-direction:column;
     text-align:center;
-    padding:40px;
+    padding:50px;
+    background:
+    linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
+    url('https://images.unsplash.com/photo-1627856013091-fed6e4e30025?q=80&w=1920');
+    background-size:cover;
+    background-position:center;
 }
 
-.hero h1{
+.hero h2{
     font-size:4rem;
     color:#22c55e;
 }
 
 .hero p{
-    max-width:700px;
     margin-top:15px;
-    color:#cbd5e1;
+    color:#d1d5db;
+    max-width:700px;
 }
 
-.buy-btn{
+.server-ip{
+    margin-top:20px;
+    background:#14532d;
+    padding:12px 20px;
+    border-radius:12px;
+    font-weight:bold;
+}
+
+.btn{
     margin-top:30px;
-    padding:15px 40px;
+    padding:15px 35px;
     background:#22c55e;
     color:white;
     text-decoration:none;
@@ -66,109 +90,129 @@ header{
     transition:.3s;
 }
 
-.buy-btn:hover{
+.btn:hover{
     background:#16a34a;
 }
 
-.product{
+.store{
     padding:80px 10%;
 }
 
 .card{
     max-width:800px;
     margin:auto;
-    background:#161b22;
+    background:linear-gradient(135deg,#0f172a,#14532d);
     border:2px solid #22c55e;
     border-radius:20px;
     padding:40px;
     text-align:center;
+    box-shadow:0 0 30px rgba(34,197,94,.3);
 }
 
-.card h2{
+.card h3{
     color:#22c55e;
-    font-size:2.2rem;
+    font-size:2.4rem;
 }
 
 .price{
     font-size:3rem;
-    font-weight:bold;
-    margin:25px 0;
+    font-weight:800;
+    margin:20px 0;
 }
 
 .features{
     text-align:left;
-    margin-top:30px;
+    margin-top:25px;
 }
 
 .features li{
-    margin:10px 0;
+    margin:12px 0;
 }
 
-.checkout-btn{
+.discord-btn{
     display:inline-block;
     margin-top:30px;
+    padding:16px 40px;
     background:#22c55e;
     color:white;
-    padding:15px 35px;
-    border-radius:12px;
     text-decoration:none;
+    border-radius:12px;
     font-weight:bold;
 }
 
 footer{
-    text-align:center;
+    margin-top:80px;
     padding:30px;
+    text-align:center;
+    color:#9ca3af;
     border-top:1px solid #1f2937;
-    margin-top:60px;
-    color:#94a3b8;
 }
+
 </style>
 </head>
-
 <body>
 
 <header>
-    <div class="logo">GreatsMC</div>
+
+<div class="logo">
+    logo-greatsmc.png 
+    <h1>GreatsMC</h1>
+</div>
+
 </header>
 
 <section class="hero">
-    <h1>TAG PRIME VIP</h1>
-    <p>
-        Destaque-se no servidor com a melhor tag exclusiva do GreatsMC.
-        Benefícios especiais, destaque no chat e vantagens únicas.
-    </p>
 
-    #prime
-        Comprar Agora
-    </a>
+<h2>TAG PRIME VIP</h2>
+
+<p>
+A melhor tag do servidor! Tenha destaque no chat,
+benefícios exclusivos e status especial dentro do GreatsMC.
+</p>
+
+<div class="server-ip">
+IP DO SERVIDOR: [não revelado]
+</div>
+
+<a class="btn"
+href="https://discord.gg/WkBHrTZak"
+target="_blank">
+COMPRAR AGORA
+</a>
+
 </section>
 
-<section class="product" id="prime">
-    <div class="card">
+<section class="store">
 
-        <h2>Prime VIP</h2>
+<div class="card">
 
-        <div class="price">
-            R$ 29,90
-        </div>
+<h3>⭐ PRIME VIP ⭐</h3>
 
-        <ul class="features">
-            <li>✔ Tag exclusiva PRIME VIP</li>
-            <li>✔ Destaque no chat</li>
-            <li>✔ Prefixo personalizado</li>
-            <li>✔ Benefícios exclusivos</li>
-            <li>✔ Entrega automática após confirmação</li>
-        </ul>
+<div class="price">
+R$ 29,90
+</div>
 
-        #
-            Finalizar Compra
-        </a>
+<ul class="features">
+<li>✔ Tag exclusiva Prime VIP</li>
+<li>✔ Destaque especial no chat</li>
+<li>✔ Benefícios exclusivos</li>
+<li>✔ Prefixo personalizado</li>
+<li>✔ Acesso a novidades antecipadas</li>
+<li>✔ Entrega através do Discord</li>
+</ul>
 
-    </div>
+<a class="discord-btn"
+href="https://discord.gg/WkBHrTZak"
+target="_blank">
+Comprar pelo Discord
+</a>
+
+</div>
+
 </section>
 
 <footer>
-    © 2026 GreatsMC • Todos os direitos reservados
+© 2026 GreatsMC • Todos os direitos reservados
 </footer>
 
 </body>
